@@ -41,3 +41,5 @@ CHANNEL_ID=@your_channel_id_here
 ```
 Products will be posted to the specified Telegram channel.
 
+
+
