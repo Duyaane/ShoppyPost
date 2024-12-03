@@ -29,20 +29,15 @@
    git clone https://github.com/Duyaane/ShoppyPost.git
    cd ShoppyPost
 
-
 SHOPPY_API_KEY=your_shoppy_api_key_here
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 CHANNEL_ID=@your_channel_id_here
 
 
-Run the Tool:
+##Run the Tool:
+
   ```bash
-  python shoppy.py
-
-Usage
-
-Run the script using:
-     ```bash
-python shoppy.py
+  python shoppy.py 
+```
 Products will be posted to the specified Telegram channel.
 
