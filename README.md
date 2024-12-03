@@ -41,5 +41,11 @@ CHANNEL_ID=@your_channel_id_here
 ```
 Products will be posted to the specified Telegram channel.
 
+## Example Post
+Here’s an example of a post created by ShoppyPost:
+
+![Example Post](images/example_post.png)
+
+
 
 
