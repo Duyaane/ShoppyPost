@@ -44,7 +44,7 @@ Products will be posted to the specified Telegram channel.
 ## Example Post
 Here’s an example of a post created by ShoppyPost:
 
-![Example Post](images/example_post.png)
+![Example Post](images/ex.png)
 
 
 
