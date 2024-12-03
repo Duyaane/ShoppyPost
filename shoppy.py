@@ -4,12 +4,11 @@ import requests
 from telegram import Bot
 from telegram.constants import ParseMode
 import os
-import subprocess  # Import subprocess to run another script
 
 # Your API and Telegram configuration
-shoppy_api_key = "92AvWtrcVeVy9FuTuvm1MuHCNjDmJXU3cHPyRTUqi5SIbz0GYy"  # Replace with your actual Shoppy.gg API key
-telegram_bot_token = "7877790327:AAE4RwQdt_leXA32jpk-x1tktTtCDKUl8kY"  # Replace with your actual Telegram bot token
-CHANNEL_ID = "@dujunayanshop"  # Replace with your actual channel ID
+shoppy_api_key = "YOUR_SHOPPY_API_KEY"  # Replace with your actual Shoppy.gg API key
+telegram_bot_token = "YOUR_TELEGRAM_BOT_TOKEN"  # Replace with your actual Telegram bot token
+CHANNEL_ID = "@your_channel_id"  # Replace with your actual channel ID
 
 # API endpoint to fetch products from Shoppy.gg
 shoppy_url = "https://shoppy.gg/api/v1/products"
@@ -18,14 +17,14 @@ headers = {
 }
 
 # Path to log file to track sent product titles
-log_file_path = "/Users/mac/Desktop/bots/send.txt"  # Update to your preferred path
+log_file_path = "send.txt"  # Update to your preferred path
 
 # Footer for each message
 footer = """
 ———————————————————————
 
-**Telegram Owner**   : [https://t.me/dujunayan](https://t.me/dujunayan)
-**Shop Link**               : [https://shoppy.gg/@Dujunayan](https://shoppy.gg/@Dujunayan)
+**Telegram Owner**   : [https://t.me/Usernam](https://t.me/Usernam)
+**Shop Link**               : [https://shoppy.gg/@DUsernam](https://shoppy.gg/@Usernam)
 **Payment Methods** : PayPal, BTC, LTC, ETH, Binance, or Other Cryptos
 """
 
@@ -78,10 +77,6 @@ async def main():
 
     else:
         print("Failed to retrieve products:", response.status_code, response.text)
-
-    # Run smm.py after completion
-    print("Running smm.py after sending posts...")
-    subprocess.run(["python3", "/Users/mac/Desktop/bots/smm.py"])  # Replace with the actual path to smm.py
 
 # Run the main function
 asyncio.run(main())
